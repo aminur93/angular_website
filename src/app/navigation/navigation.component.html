@@ -1,0 +1,61 @@
+  <div id="header" class="nav-collapse nav-solid">
+      <div class="row clearfix">
+          <div class="col-1">
+
+            <!--Logo-->
+            <div id="logo">
+
+              <!--Logo that is shown on the banner-->
+              <img src="assets/images/logo.png" id="banner-logo" alt="Landing Page"/>
+              <!--End of Banner Logo-->
+
+              <!--The Logo that is shown on the sticky Navigation Bar-->
+              <img src="assets/images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
+              <!--End of Navigation Logo-->
+
+            </div>
+            <!--End of Logo-->
+
+              <app-social></app-social>
+
+            <!--Main Navigation-->
+              <nav id="nav-main">
+                  <ul>
+                    <li>
+                      <a routerLink="/Home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >Home</a>
+                    </li>
+                    <li>
+                      <a routerLink="/About" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About</a>
+                    </li>
+                    <li>
+                      <a routerLink="/Gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Gallery</a>
+                    </li>
+                    <li>
+                      <a routerLink="/Service" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Services</a>
+                    </li>
+                    <li>
+                      <a routerLink="/Testimonial" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Testimonials</a>
+                    </li>
+                    <li>
+                      <a routerLink="/Clients" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Clients</a>
+                    </li>
+                    <li>
+                      <a routerLink="/Price" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Pricing</a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/Blog" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Blog</a>
+                    </li>
+
+                    <li>
+                      <a (click)="logout()" style="cursor: pointer;">Logout</a>
+                    </li>
+                  </ul>
+              </nav>
+            <!--End of Main Navigation-->
+            <div id="nav-trigger"><span></span></div>
+            <nav id="nav-mobile"></nav>
+
+          </div>
+      </div>
+  </div><!--End of Header-->

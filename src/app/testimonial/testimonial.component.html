@@ -1,0 +1,21 @@
+<!--Testimonials-->
+<aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+
+  <div class="row clearfix">
+
+    <div class="section-heading">
+      <h3>{{testimonial.tagline}}</h3>
+      <h2 class="section-title">{{testimonial.title}}</h2>
+    </div>
+
+    <!--User Testimonial-->
+    <blockquote class="col-3 testimonial classic" *ngFor="let features of testimonial.features">
+      <img src="assets/images/user-images/{{features.image}}" alt="User"/>
+      <q>{{features.details}}</q>
+      <footer>{{features.footer}}</footer>
+    </blockquote>
+    <!-- End of Testimonial-->
+  </div>
+
+</aside>
+<!--End of Testimonials-->

@@ -1,0 +1,38 @@
+<section id="pricing" class="secondary-color text-center scrollto clearfix ">
+  <div class="row clearfix">
+    <div class="container">
+      <div class="center-form panel">
+        <div class="panel-body">
+          <h4 class="text-center"><i class="fa fa-user-plus"></i> Sign Up</h4>
+
+          <form [formGroup]="signupForm" (ngSubmit)="signup(signupForm.value)">
+
+            <div class="form-group">
+              <input type="text" formControlName="firstName" class="form-control form-names input-lg" name="firstName" placeholder="First Name">
+              <input type="text" formControlName="lastName" class="form-control form-names input-lg" name="lastName" placeholder="Last Name">
+              <span class="fa fa-user form-control-icon"></span>
+            </div>
+
+            <div class="form-group">
+              <input type="text" formControlName="email" class="form-control input-lg" name="email" placeholder="Email">
+              <span class="fa fa-envelope form-control-icon"></span>
+            </div>
+
+            <div class="form-group">
+              <input type="password" formControlName="password" class="form-control input-lg" name="password" placeholder="Password">
+              <span class="fa fa-key form-control-icon"></span>
+            </div>
+
+            <button type="submit" class="btn btn-block btn-success">SignUp</button>
+
+            <p class="text-center">
+              <small>Already have account !
+                <a routerLink="/login"> Login</a>
+              </small>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
